@@ -1,0 +1,109 @@
+import styled from 'styled-components';
+
+export const MarketingSectionWrapper = styled.section`
+  background: linear-gradient(90deg, #73C4B1 0%, #BFDFC6 100%);
+  width: 100%;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MarketingContent = styled.div<{ isMobile: boolean }>`
+  display: flex;
+  flex-direction: ${({ isMobile }) => (isMobile ? 'column' : 'row')};
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: ${({ isMobile }) => (isMobile ? 'center' : 'left')};
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+`;
+
+export const MarketingImage = styled.div`
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: -12rem;
+      width: 450px;
+      height: 450px;
+    }
+  }
+
+  .label {
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: -7rem;
+    margin-top: 3rem;
+    z-index: 1;
+    left: 0;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #46B4A5;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    @media (max-width: 1024px) {
+      margin-left: -12rem;
+      margin-top: 6rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+`;
+
+export const MarketingText = styled.div`
+  width: 50%;
+
+  h2 {
+    font-size: 2rem;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    @media (max-width: 1024px) {
+      padding: 0rem 1rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+     margin-bottom: 2rem;
+  }
+`;
+
+export const MarketingButton = styled.button`
+  background-color: #46B4A5;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3ba295;
+  }
+`;
