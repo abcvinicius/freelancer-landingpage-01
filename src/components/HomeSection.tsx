@@ -11,9 +11,7 @@ export const HomeSection = () => (
         <a href="#contact" className="btn-primary">Fale diretamente Comigo</a>
       </HomeContent>
       <HomeImageWrapper>
-        <div className="circle-left" />
-        <div className="circle-right" />
-        <div className="image-hero" />
+        <div className="image-home" />
       </HomeImageWrapper>
     </HomeContainer>
   </HomeSectionWrapper>
