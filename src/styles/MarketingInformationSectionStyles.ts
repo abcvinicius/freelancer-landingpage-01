@@ -5,6 +5,7 @@ import IconGreen from '../assets/card-green-icon-marketing.png';
 export const InformationSectionWrapper = styled.section`
   background-color: #f9f9f9;
   padding: 4rem;
+  margin-top: 12rem;
 `;
 
 export const InformationContent = styled.div`
@@ -35,22 +36,33 @@ export const InformationHeader = styled.div`
 
 export const CardGrid = styled.div<{ isMobile: boolean }>`
   display: grid;
-  grid-template-columns: ${({ isMobile }) => (isMobile ? '1fr' : 'repeat(4, 1fr)')};
-  gap: 6rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   justify-items: center;
   justify-content: center;
 
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
+    grid-template-columns: repeat(2, 1fr); /* Exibir 2 colunas no tablet */
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Exibir 2 colunas no mobile */
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr); /* Exibir 2 colunas em telas muito pequenas */
+    gap: 1rem; /* Ajustar o gap para telas menores */
   }
 `;
 
 export const Card = styled.div`
   background-color: white;
   border-radius: 10px;
-  padding: 2rem;
-  width: 12rem;
+  padding: 1.5rem;
+  width: 100%; /* Ajuste para que o card ocupe todo o espaço da coluna */
+  max-width: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
@@ -62,6 +74,25 @@ export const Card = styled.div`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  h4 {
+    font-size: 1.25rem; /* Reduzindo o tamanho da fonte */
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem; /* Diminuindo a fonte */
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+    color: #46b4a5;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   &.white {
