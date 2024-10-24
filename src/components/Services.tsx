@@ -1,4 +1,4 @@
-import IconSettings from '../assets/icon-settings-servicos.png';
+import IconSettings from '../assets/Icon-settings-servicos.png';
 import IconArrow from '../assets/icon-arrow-servicos.png';
 import {
   ServicesSection,
