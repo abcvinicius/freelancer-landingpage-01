@@ -87,7 +87,7 @@ export const Card = styled.div`
 
   p {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     padding-left: 1rem;
   }
 
@@ -98,7 +98,7 @@ export const Card = styled.div`
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.25rem;
     padding-left: 1rem;
   }
 
