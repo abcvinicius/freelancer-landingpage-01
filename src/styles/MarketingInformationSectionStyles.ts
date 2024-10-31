@@ -30,7 +30,7 @@ export const InformationHeader = styled.div`
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.68rem;
     color: #333;
   }
 `;
