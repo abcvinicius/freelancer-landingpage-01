@@ -54,14 +54,14 @@ export const StyledSidebarLink = styled(ScrollLink)`
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  color: #4A4A4A; /* Cinza escuro */
+  color: #4A4A4A;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &.active {
-    background-color: #1EA69A; /* Fundo verde para o item ativo */
-    color: #FFFFFF; /* Cor do texto para o item ativo */
+    background-color: #1EA69A;
+    color: #FFFFFF;
   }
 
   &:hover {
@@ -69,10 +69,9 @@ export const StyledSidebarLink = styled(ScrollLink)`
   }
 
   .icon {
-    color: #4A4A4A; /* Ícone em cinza escuro */
+    color: #4A4A4A;
   }
 
-  /* Ajuste para a cor do ícone e texto do item ativo */
   &.active .icon {
     color: #FFFFFF;
   }
