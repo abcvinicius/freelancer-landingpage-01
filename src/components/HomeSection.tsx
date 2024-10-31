@@ -8,7 +8,12 @@ export const HomeSection = () => (
         <p>
           Atendimento <strong>exclusivo</strong> e soluções <strong>personalizadas</strong> com foco no que realmente importa: <strong>vendas!</strong>
         </p>
-        <a href="#contact" className="btn-primary">Fale diretamente Comigo</a>
+        <a href="https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os" 
+           className="btn-primary" 
+           target="_blank" 
+           rel="noopener noreferrer">
+           Fale diretamente Comigo
+        </a>
       </HomeContent>
       <HomeImageWrapper>
         <div className="image-home" />

@@ -41,7 +41,15 @@ export const MarketingInformationSection = () => {
         </InformationHeader>
 
         <CardGrid isMobile={isMobile}>
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>SEO Local:</CardTitle>
             <CardDescription>
               Otimize seu site para se destacar nos mecanismos de busca e atrair tráfego qualificado de forma contínua.
@@ -51,7 +59,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="green">
+          <Card className="green" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Tráfego Pago:</CardTitle>
             <CardDescription>
               Criação e gestão de campanhas online com foco em fazer com que seus anúncios paguem sozinho.
@@ -61,7 +77,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Automações e CRM:</CardTitle>
             <CardDescription>
               Automatização de processos essenciais para gerar e nutrir leads de forma ágil e eficiente.
@@ -71,7 +95,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Inbound Marketing:</CardTitle>
             <CardDescription>
               Integração entre marketing e comercial, criando um funil robusto que explora cada oportunidade de venda.
@@ -90,7 +122,15 @@ export const MarketingInformationSection = () => {
         </InformationHeader>
 
         <CardGrid isMobile={isMobile}>
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Dashboard Personalizado:</CardTitle>
             <CardDescription>
               Visualização centralizada dos dados em tempo real. Mantenha o progresso de forma simples e rápida.
@@ -100,7 +140,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="green">
+          <Card className="green" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Auditoria de Contas de Anúncios:</CardTitle>
             <CardDescription>
               Identificação de gaps e oportunidades ocultas que podem estar limitando os seus resultados.
@@ -110,7 +158,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Trackeamento e Análise de Dados:</CardTitle>
             <CardDescription>
               Rastreamento e captura de dados de forma precisa e segura, em conformidade com a LGPD.
@@ -120,7 +176,15 @@ export const MarketingInformationSection = () => {
             </CardLink>
           </Card>
 
-          <Card className="white">
+          <Card className="white" onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/send?phone=5541985317476&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          >
             <CardTitle>Treinamento para Marketing Interno:</CardTitle>
             <CardDescription>
               Fortaleça sua equipe interna com as melhores práticas e estratégias personalizadas.
