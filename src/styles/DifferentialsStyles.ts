@@ -32,6 +32,11 @@ export const DifferentialsDescription = styled.div`
     margin-bottom: 1rem;
 
     @media (max-width: 1024px) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
     }
   }
 
