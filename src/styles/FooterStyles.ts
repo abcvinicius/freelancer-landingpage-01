@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
   background-color: #F8F6F2;
   text-align: center;
-  height: 70vh;
+  height: 100vh;
   align-content: end;
 `;
 
