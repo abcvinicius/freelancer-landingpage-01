@@ -17,7 +17,7 @@ export const Footer = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }}
           >Vamos Começar</FooterButton>
         </FooterText>
         <FooterImage>

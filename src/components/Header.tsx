@@ -47,7 +47,6 @@ export const Header = () => {
         </NavList>
       </nav>
 
-      {/* Ícone de menu para mobile */}
       <MenuIcon onClick={toggleSidebar} />
 
       <Sidebar isOpen={isSidebarOpen}>

@@ -48,7 +48,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>SEO Local:</CardTitle>
             <CardDescription>
@@ -66,7 +66,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Tráfego Pago:</CardTitle>
             <CardDescription>
@@ -84,7 +84,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Automações e CRM:</CardTitle>
             <CardDescription>
@@ -102,7 +102,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Inbound Marketing:</CardTitle>
             <CardDescription>
@@ -129,7 +129,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Dashboard Personalizado:</CardTitle>
             <CardDescription>
@@ -147,7 +147,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Auditoria de Contas de Anúncios:</CardTitle>
             <CardDescription>
@@ -165,7 +165,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }} 
           >
             <CardTitle>Trackeamento e Análise de Dados:</CardTitle>
             <CardDescription>
@@ -183,7 +183,7 @@ export const MarketingInformationSection = () => {
                 "noopener,noreferrer"
               )
             }
-            style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+            style={{ cursor: 'pointer' }}
           >
             <CardTitle>Treinamento para Marketing Interno:</CardTitle>
             <CardDescription>

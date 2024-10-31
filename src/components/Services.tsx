@@ -23,7 +23,7 @@ export const Services = () => {
               "noopener,noreferrer"
             )
           }
-          style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          style={{ cursor: 'pointer' }} 
         >
           <ServiceIcon src={IconSettings} alt="Não invisto em Marketing" />
           <ServiceText>
@@ -44,7 +44,7 @@ export const Services = () => {
               "noopener,noreferrer"
             )
           }
-          style={{ cursor: 'pointer' }} // Adiciona um cursor de ponteiro
+          style={{ cursor: 'pointer' }} 
         >
           <ServiceIcon src={IconSettings} alt="Já invisto em Marketing" />
           <ServiceText>
