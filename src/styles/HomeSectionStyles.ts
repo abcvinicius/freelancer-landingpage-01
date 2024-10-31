@@ -5,6 +5,8 @@ export const HomeSectionWrapper = styled.section`
   height: 100vh;
   align-content: center;
   padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+
 `;
 
 export const HomeContainer = styled.section`
@@ -80,11 +82,13 @@ export const HomeImageWrapper = styled.div`
     border-radius: 50%;
 
     @media (max-width: 1024px) {
+      margin-top: 2rem;
       width: 400px;
       height: 385px;
     }
 
     @media (max-width: 768px) {
+      margin-top: 2rem;
       width: 300px;
       height: 285px;
     }

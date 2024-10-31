@@ -6,8 +6,10 @@ import VectorDifferentials03 from '../assets/VectorDifferentials03.png';
 export const DifferentialsSection = styled.section`
   padding: 2rem;
   background-color: #f9f9f9;
-  height: auto; /* Ajuste para altura flexível */
+  height: auto;
   align-content: center;
+  padding-top: 5rem !important;
+
 `;
 
 export const DifferentialsContent = styled.div`
