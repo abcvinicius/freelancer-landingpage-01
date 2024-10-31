@@ -1,11 +1,11 @@
-//HeaderStyles.ts
+// HeaderStyles.ts
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import menuIcon from '../assets/icon-menu.png';
 
 export const HeaderWrapper = styled.header<{ isScrolled: boolean }>`
-  background-color: ${({ isScrolled }) => (isScrolled ? 'rgba(255, 255, 255, 1)' : 'transparent')};
-  box-shadow: ${({ isScrolled }) => (isScrolled ? '0 3px 12px rgba(0, 0, 0, 0.1)' : 'none')};
+  background-color: ${({ isScrolled }) => (isScrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent')};
+  box-shadow: ${({ isScrolled }) => (isScrolled ? '0 4px 6px rgba(0, 0, 0, 0.1)' : 'none')};
   padding: 0rem !important;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@ export const HeaderWrapper = styled.header<{ isScrolled: boolean }>`
   width: 100%;
   z-index: 999;
   height: 10vh !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   @media (max-width: 1024px) {
     justify-content: space-between;
@@ -45,37 +46,35 @@ export const NavItem = styled.li`
     color: #1EA69A;
     transform: scale(1.05);
   }
-  
 `;
 
-export const StyledLink = styled(NavLink)`
-  color: #000000;
+export const StyledSidebarLink = styled(ScrollLink)`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #4A4A4A; /* Cinza escuro */
   text-decoration: none;
-  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &.active {
-    color: #1EA69A;
+    background-color: #1EA69A; /* Fundo verde para o item ativo */
+    color: #FFFFFF; /* Cor do texto para o item ativo */
   }
 
   &:hover {
     color: #1EA69A;
-    transform: scale(1.05);
   }
-`;
 
-export const MenuIcon = styled.div`
-  width: 35px;
-  height: 35px;
-  background-image: url(${menuIcon});
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  position: absolute; 
-  right: 1rem;
-  margin-right: 1rem;
-  
-  @media (min-width: 1025px) {
-    display: none;
+  .icon {
+    color: #4A4A4A; /* Ícone em cinza escuro */
+  }
+
+  /* Ajuste para a cor do ícone e texto do item ativo */
+  &.active .icon {
+    color: #FFFFFF;
   }
 `;
 
@@ -111,6 +110,22 @@ export const SidebarContent = styled.div`
     li {
       font-size: 1.2rem;
     }
+  }
+`;
+
+export const MenuIcon = styled.div`
+  width: 35px;
+  height: 35px;
+  background-image: url(${menuIcon});
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: absolute; 
+  right: 1rem;
+  margin-right: 1rem;
+  
+  @media (min-width: 1025px) {
+    display: none;
   }
 `;
 

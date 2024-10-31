@@ -1,7 +1,11 @@
 // Header.tsx
 import { useState, useEffect } from 'react';
-import { HeaderWrapper, NavList, NavItem, Sidebar, SidebarContent, CloseIcon, MenuIcon } from '../styles/HeaderStyles';
+import { HeaderWrapper, NavList, NavItem, Sidebar, SidebarContent, CloseIcon, MenuIcon, StyledSidebarLink } from '../styles/HeaderStyles';
 import { Link } from 'react-scroll';
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import WorkIcon from '@mui/icons-material/Work';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 export const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,7 +15,6 @@ export const Header = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  // Monitora o scroll para adicionar o background ao header
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -52,16 +55,24 @@ export const Header = () => {
           <CloseIcon onClick={toggleSidebar} />
           <ul>
             <NavItem>
-              <Link to="home" smooth={true} duration={500} onClick={toggleSidebar}>Home</Link>
+              <StyledSidebarLink to="home" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+                <HomeIcon className="icon" /> Home
+              </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <Link to="differentials" smooth={true} duration={500} onClick={toggleSidebar}>Diferenciais</Link>
+              <StyledSidebarLink to="differentials" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+                <InfoIcon className="icon" /> Diferenciais
+              </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <Link to="services" smooth={true} duration={500} onClick={toggleSidebar}>Serviços</Link>
+              <StyledSidebarLink to="services" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+                <WorkIcon className="icon" /> Serviços
+              </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <Link to="footer" smooth={true} duration={500} onClick={toggleSidebar}>Contato</Link>
+              <StyledSidebarLink to="footer" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+                <ContactMailIcon className="icon" /> Contato
+              </StyledSidebarLink>
             </NavItem>
           </ul>
         </SidebarContent>
