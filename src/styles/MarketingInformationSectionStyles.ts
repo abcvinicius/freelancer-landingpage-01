@@ -71,7 +71,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  min-height: 300px; /* Altura mínima para uniformizar os cards */
+  min-height: 250px; /* Altura mínima para uniformizar os cards */
 
   &:hover {
     transform: scale(1.05);
@@ -87,7 +87,7 @@ export const Card = styled.div`
 
   p {
     font-size: 0.9rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     padding-left: 1rem;
   }
 
@@ -98,7 +98,7 @@ export const Card = styled.div`
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1rem;
     padding-left: 1rem;
   }
 
