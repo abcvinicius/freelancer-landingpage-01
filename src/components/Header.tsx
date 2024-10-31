@@ -1,17 +1,32 @@
 // Header.tsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HeaderWrapper, NavList, NavItem, Sidebar, SidebarContent, CloseIcon, MenuIcon } from '../styles/HeaderStyles';
 import { Link } from 'react-scroll';
 
 export const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  // Monitora o scroll para adicionar o background ao header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <HeaderWrapper>
+    <HeaderWrapper isScrolled={isScrolled}>
       <nav>
         <NavList>
           <NavItem>

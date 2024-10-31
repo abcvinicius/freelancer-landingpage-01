@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import menuIcon from '../assets/icon-menu.png';
 
-export const HeaderWrapper = styled.header`
-  background-color: transparent;
+export const HeaderWrapper = styled.header<{ isScrolled: boolean }>`
+  background-color: ${({ isScrolled }) => (isScrolled ? 'rgba(255, 255, 255, 1)' : 'transparent')};
+  box-shadow: ${({ isScrolled }) => (isScrolled ? '0 3px 12px rgba(0, 0, 0, 0.1)' : 'none')};
   padding: 0rem !important;
   display: flex;
   justify-content: center;
