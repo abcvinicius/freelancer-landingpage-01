@@ -5,7 +5,7 @@ import IconGreen from '../assets/card-green-icon-marketing.png';
 export const InformationSectionWrapper = styled.section`
   background-color: #f9f9f9;
   padding: 4rem;
-  margin-top: 2rem;
+  margin-top: 12rem;
 `;
 
 export const InformationContent = styled.div`
