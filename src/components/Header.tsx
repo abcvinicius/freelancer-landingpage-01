@@ -36,7 +36,7 @@ export const Header = () => {
             <Link to="home" smooth={true} duration={500} offset={-70}>Sobre Mim</Link>
           </NavItem>
           <NavItem>
-            <Link to="differentials" smooth={true} duration={500} offset={-70}>Diferenciais</Link>
+            <Link to="differentials" smooth={true} duration={500} offset={-100}>Diferenciais</Link>
           </NavItem>
           <NavItem>
             <Link to="services" smooth={true} duration={500} offset={-70}>Serviços</Link>
