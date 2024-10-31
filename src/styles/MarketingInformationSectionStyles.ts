@@ -1,3 +1,4 @@
+// MarketingInformationSectionStyles.ts
 import styled from 'styled-components';
 import IconWhite from '../assets/card-withe-icon-marketing.png';
 import IconGreen from '../assets/card-green-icon-marketing.png';
@@ -52,8 +53,8 @@ export const CardGrid = styled.div<{ isMobile: boolean }>`
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr); /* Exibir 2 colunas em telas muito pequenas */
-    gap: 1rem; /* Ajustar o gap para telas menores */
+    grid-template-columns: 1fr; /* Exibir 1 coluna em telas muito pequenas */
+    gap: 1rem;
   }
 `;
 
@@ -61,8 +62,7 @@ export const Card = styled.div`
   background-color: white;
   border-radius: 10px;
   padding: 0.5rem;
-  width: 100%; /* Ajuste para que o card ocupe todo o espaço da coluna */
-  max-width: 300px;
+  width: 100%; /* Ajuste para ocupar todo o espaço da coluna */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
@@ -71,13 +71,15 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  min-height: 300px; /* Altura mínima para uniformizar os cards */
 
   &:hover {
     transform: scale(1.05);
   }
 
   h4 {
-    margin-block-start: 5rem;
+    margin-block-start: 1.2rem;
+    margin-left: 4rem;
     font-size: 1.25rem; 
     margin-bottom: 0.5rem;
     padding-left: 1rem;
@@ -130,7 +132,7 @@ export const Card = styled.div`
     background-repeat: no-repeat;
     position: absolute;
     top: 1em;
-    left: 25%;
+    left: 15%;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;

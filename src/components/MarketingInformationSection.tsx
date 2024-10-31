@@ -1,3 +1,4 @@
+// MarketingInformationSection.tsx
 import { useEffect, useState } from 'react';
 import {
   InformationSectionWrapper,
