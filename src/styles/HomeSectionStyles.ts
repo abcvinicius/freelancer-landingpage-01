@@ -32,11 +32,11 @@ export const HomeContent = styled.div`
     color: #333;
 
     @media (max-width: 1024px) {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
     }
 
     @media (max-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -79,16 +79,15 @@ export const HomeImageWrapper = styled.div`
     background-position: center;
     width: 500px;
     height: 485px;
-    border-radius: 50%;
 
     @media (max-width: 1024px) {
-      margin-top: 2rem;
+      margin-top: 4rem;
       width: 400px;
       height: 385px;
     }
 
     @media (max-width: 768px) {
-      margin-top: 2rem;
+      margin-top: 4rem;
       width: 300px;
       height: 285px;
     }
