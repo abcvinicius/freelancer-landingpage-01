@@ -79,7 +79,7 @@ export const Card = styled.div`
 
   h4 {
     margin-block-start: 1.2rem;
-    margin-left: 4rem;
+    margin-left: 3.25rem;
     font-size: 1.25rem; 
     margin-bottom: 0.5rem;
     padding-left: 1rem;
@@ -132,7 +132,7 @@ export const Card = styled.div`
     background-repeat: no-repeat;
     position: absolute;
     top: 1em;
-    left: 15%;
+    left: 12.5%;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
