@@ -60,7 +60,7 @@ export const CardGrid = styled.div<{ isMobile: boolean }>`
 export const Card = styled.div`
   background-color: white;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 0.5rem;
   width: 100%; /* Ajuste para que o card ocupe todo o espaço da coluna */
   max-width: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -77,13 +77,16 @@ export const Card = styled.div`
   }
 
   h4 {
-    font-size: 1.25rem; /* Reduzindo o tamanho da fonte */
-    margin-bottom: 1rem;
+    margin-block-start: 5rem;
+    font-size: 1.25rem; 
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
   }
 
   p {
-    font-size: 0.9rem; /* Diminuindo a fonte */
+    font-size: 0.9rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
   }
 
   a {
@@ -93,6 +96,8 @@ export const Card = styled.div`
     text-decoration: none;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
   }
 
   &.white {
@@ -101,8 +106,8 @@ export const Card = styled.div`
     background-position: top left;
     background-size: 50px 50px;
     color: #46b4a5;
-    background-position-x: 2rem;
-    background-position-y: 4rem;
+    background-position-x: 1rem;
+    background-position-y: 1rem;
   }
 
   &.green {
@@ -124,8 +129,8 @@ export const Card = styled.div`
     background-size: 50px 50px;
     background-repeat: no-repeat;
     position: absolute;
-    top: 4em;
-    left: 22%;
+    top: 1em;
+    left: 25%;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;

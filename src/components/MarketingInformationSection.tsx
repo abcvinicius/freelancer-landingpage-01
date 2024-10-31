@@ -36,7 +36,7 @@ export const MarketingInformationSection = () => {
       <InformationContent>
         <InformationHeader>
           <h2>#IDEAL PARA VOCÊ</h2>
-          <h3>Você ainda não investe em marketing digital?</h3>
+          <h3>Ainda não investe em marketing digital?</h3>
         </InformationHeader>
 
         <CardGrid isMobile={isMobile}>
@@ -82,11 +82,10 @@ export const MarketingInformationSection = () => {
         </CardGrid>
       </InformationContent>
 
-      {/* Seção 2 - Já investe */}
       <InformationContent>
         <InformationHeader>
           <h2>#IDEAL PARA VOCÊ</h2>
-          <h3>Você já investe em marketing digital?</h3>
+          <h3>Já investe em marketing digital?</h3>
         </InformationHeader>
 
         <CardGrid isMobile={isMobile}>
