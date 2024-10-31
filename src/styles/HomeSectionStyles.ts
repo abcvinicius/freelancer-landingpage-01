@@ -2,10 +2,9 @@ import styled from 'styled-components';
 import photoHome from '../assets/photo-home.png';
 
 export const HomeSectionWrapper = styled.section`
-  padding: 2rem;
-  height: 90vh;
+  height: 100vh;
   align-content: center;
-  padding-top: 12rem !important;
+  padding-top: 5rem !important;
 `;
 
 export const HomeContainer = styled.section`
@@ -41,7 +40,7 @@ export const HomeContent = styled.div`
 
   p {
     margin-top: -2.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
     font-size: 1.2rem;
     color: #555;
 
@@ -63,6 +62,7 @@ export const HomeContent = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     transition: opacity 0.3s ease;
+    text-decoration: none;
 
     &:hover {
       opacity: 85%;

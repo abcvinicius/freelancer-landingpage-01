@@ -32,8 +32,8 @@ export const MarketingImage = styled.div`
 
   img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 
     @media (max-width: 1024px) {
       margin-bottom: -12rem;
@@ -43,11 +43,11 @@ export const MarketingImage = styled.div`
   }
 
   .label {
+
     display: block;
-    width: 10rem;
     height: 2.5rem;
-    margin-left: -7rem;
-    margin-top: 3rem;
+    margin-left: -10rem;
+    margin-top: 5rem;
     z-index: 1;
     left: 0;
     background-color: white;
@@ -59,7 +59,12 @@ export const MarketingImage = styled.div`
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
+     transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+    
     @media (max-width: 1024px) {
       margin-left: -12rem;
       margin-top: 6rem;
@@ -77,7 +82,7 @@ export const MarketingText = styled.div`
   width: 50%;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.15rem;
     color: white;
     line-height: 1.4;
     margin-bottom: 1.5rem;
@@ -102,8 +107,10 @@ export const MarketingButton = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 
-  &:hover {
+&:hover {
+    transform: scale(1.02);
     background-color: #3ba295;
   }
 `;

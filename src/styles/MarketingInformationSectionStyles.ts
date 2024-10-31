@@ -5,7 +5,7 @@ import IconGreen from '../assets/card-green-icon-marketing.png';
 export const InformationSectionWrapper = styled.section`
   background-color: #f9f9f9;
   padding: 4rem;
-  margin-top: 12rem;
+  margin-top: 2rem;
 `;
 
 export const InformationContent = styled.div`
@@ -23,9 +23,9 @@ export const InformationHeader = styled.div`
   h2 {
     font-size: 1.2rem;
     color: #46b4a5;
-    font-weight: bold;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
   }
 
   h3 {

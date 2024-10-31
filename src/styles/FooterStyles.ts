@@ -52,8 +52,8 @@ export const FooterImage = styled.div`
 
   img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
   }
 
   @media (max-width: 768px) {

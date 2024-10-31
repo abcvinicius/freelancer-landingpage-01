@@ -32,12 +32,19 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
+  cursor: pointer;
   font-size: 1.125rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &.active {
+    color: #1EA69A;
+  }
 
   &:hover {
-    transform: scale(1.02);
+    color: #1EA69A;
+    transform: scale(1.05);
   }
+  
 `;
 
 export const StyledLink = styled(NavLink)`

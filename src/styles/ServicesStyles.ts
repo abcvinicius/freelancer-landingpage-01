@@ -21,7 +21,7 @@ export const ServicesSection = styled.section`
   .section-hash {
     font-size: 1.75rem;
     color: #46B4A5;
-    font-weight: medium;
+    font-weight: 400;
     text-transform: uppercase;
     display: block;
     text-align: start;
