@@ -66,7 +66,7 @@ export const MarketingImage = styled.div`
     }
     
     @media (max-width: 1024px) {
-      margin-right: 3rem;
+      margin-right: 2rem;
       margin-left: -12.9rem;
     }
   }
