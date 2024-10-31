@@ -33,16 +33,16 @@ export const Header = () => {
       <nav>
         <NavList>
           <NavItem>
-            <Link to="home" smooth={true} duration={500}>Sobre Mim</Link>
+            <Link to="home" smooth={true} duration={500} offset={-70}>Sobre Mim</Link>
           </NavItem>
           <NavItem>
-            <Link to="differentials" smooth={true} duration={500}>Diferenciais</Link>
+            <Link to="differentials" smooth={true} duration={500} offset={-70}>Diferenciais</Link>
           </NavItem>
           <NavItem>
-            <Link to="services" smooth={true} duration={500}>Serviços</Link>
+            <Link to="services" smooth={true} duration={500} offset={-70}>Serviços</Link>
           </NavItem>
           <NavItem>
-            <Link to="footer" smooth={true} duration={500}>Contato</Link>
+            <Link to="footer" smooth={true} duration={500} offset={-70}>Contato</Link>
           </NavItem>
         </NavList>
       </nav>
@@ -55,22 +55,22 @@ export const Header = () => {
           <CloseIcon onClick={toggleSidebar} />
           <ul>
             <NavItem>
-              <StyledSidebarLink to="home" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+              <StyledSidebarLink to="home" smooth={true} duration={500} spy={true} offset={-70} activeClass="active" onClick={toggleSidebar}>
                 <HomeIcon className="icon" /> Home
               </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <StyledSidebarLink to="differentials" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+              <StyledSidebarLink to="differentials" smooth={true} duration={500} spy={true} offset={-70} activeClass="active" onClick={toggleSidebar}>
                 <InfoIcon className="icon" /> Diferenciais
               </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <StyledSidebarLink to="services" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+              <StyledSidebarLink to="services" smooth={true} duration={500} spy={true} offset={-70} activeClass="active" onClick={toggleSidebar}>
                 <WorkIcon className="icon" /> Serviços
               </StyledSidebarLink>
             </NavItem>
             <NavItem>
-              <StyledSidebarLink to="footer" smooth={true} duration={500} spy={true} activeClass="active" onClick={toggleSidebar}>
+              <StyledSidebarLink to="footer" smooth={true} duration={500} spy={true} offset={-70} activeClass="active" onClick={toggleSidebar}>
                 <ContactMailIcon className="icon" /> Contato
               </StyledSidebarLink>
             </NavItem>
