@@ -5,8 +5,12 @@ import IconGreen from '../assets/card-green-icon-marketing.png';
 
 export const InformationSectionWrapper = styled.section`
   background-color: #f9f9f9;
-  padding: 4rem;
-  margin-top: 12rem;
+  padding: 0rem;
+  margin-top: 5rem;
+
+  @media (max-width: 1024px) {
+    margin-top: 12rem;
+  }
 `;
 
 export const InformationContent = styled.div`
@@ -39,10 +43,12 @@ export const CardGrid = styled.div<{ isMobile: boolean }>`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  padding: 2rem;
   justify-items: center;
   justify-content: center;
 
   @media (max-width: 1024px) {
+    padding: 2rem;
     grid-template-columns: repeat(2, 1fr); /* Exibir 2 colunas no tablet */
     gap: 2rem;
   }

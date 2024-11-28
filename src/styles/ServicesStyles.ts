@@ -43,6 +43,9 @@ export const ServicesSection = styled.section`
     }
   }
 `;
+export const ServiceWarapper = styled.div`
+  display: flex;
+`;
 
 export const ServiceBox = styled.div`
   background-color: white;
@@ -72,9 +75,15 @@ export const ServiceIcon = styled.img`
 
 export const ServiceText = styled.div`
   h3 {
+    margin: 0 0.5rem !important;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: #46B4A5;
+    
+    @media (max-width: 670px) {
+      font-size: 1.5rem;
+
+    }
   }
 
   p {

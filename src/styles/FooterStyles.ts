@@ -2,21 +2,24 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   background-color: #F8F6F2;
-  text-align: center;
-  height: 100vh;
-  align-content: end;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 `;
+
 
 export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto; /* Centraliza verticalmente */
+  flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+  text-align: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    text-align: center;
   }
 `;
 
@@ -79,12 +82,11 @@ export const FooterButton = styled.button`
 `;
 
 export const CopyrightText = styled.p`
-  margin-top: 4rem;
-  margin-bottom: -1rem;
-  width: 100%;
   font-size: 0.9rem;
   color: #555;
   background-color: #46B4A5;
   padding: 1rem;
+  margin-bottom: 0rem !important;
   color: white;
+  text-align: center;
 `;

@@ -11,8 +11,8 @@ export const HomeSectionWrapper = styled.section`
 
 export const HomeContainer = styled.section`
   padding: 2rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

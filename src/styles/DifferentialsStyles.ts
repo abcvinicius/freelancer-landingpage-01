@@ -8,7 +8,7 @@ export const DifferentialsSection = styled.section`
   background-color: #f9f9f9;
   height: auto;
   align-content: center;
-  padding-top: 5rem !important;
+  padding-top: 2rem !important;
 
 `;
 
