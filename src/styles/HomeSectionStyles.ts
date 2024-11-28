@@ -22,6 +22,11 @@ export const HomeContainer = styled.section`
     align-items: center;
     text-align: center;
   }
+  @media (max-width: 768px) {
+      font-size: 2rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
 `;
 
 export const HomeContent = styled.div`
