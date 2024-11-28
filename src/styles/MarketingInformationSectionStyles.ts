@@ -22,6 +22,7 @@ export const InformationContent = styled.div`
 `;
 
 export const InformationHeader = styled.div`
+  padding: 0rem 1rem;
   margin-bottom: 2rem;
   text-align: center;
 

@@ -45,6 +45,33 @@ export const ServicesSection = styled.section`
 `;
 export const ServiceWarapper = styled.div`
   display: flex;
+  align-items: center;
+
+  h3 {
+  margin: 0rem 0rem 0rem 0.3rem !important;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #46B4A5;
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 670px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 540px) {
+    font-size: 1.0rem;
+  }
+  @media (max-width: 493px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 471px) {
+    font-size: 0.7rem;
+  }
+}
 `;
 
 export const ServiceBox = styled.div`
@@ -70,21 +97,9 @@ export const ServiceBox = styled.div`
 export const ServiceIcon = styled.img`
   width: 50px;
   height: 50px;
-  margin-bottom: 1rem;
 `;
 
 export const ServiceText = styled.div`
-  h3 {
-    margin: 0 0.5rem !important;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #46B4A5;
-    
-    @media (max-width: 670px) {
-      font-size: 1.5rem;
-
-    }
-  }
 
   p {
     font-size: 1.1rem;
@@ -93,8 +108,24 @@ export const ServiceText = styled.div`
     margin-bottom: 1.5rem;
 
     @media (max-width: 1024px) {
-      text-align: center; /* Centraliza o texto dentro dos cards em telas menores */
+      text-align: left; /* Centraliza o texto dentro dos cards em telas menores */
     }
+
+  @media (max-width: 670px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 540px) {
+    font-size: 1.0rem;
+  }
+  @media (max-width: 493px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 471px) {
+    font-size: 0.7rem;
+  }
   }
 `;
 
@@ -117,5 +148,23 @@ export const ServiceLink = styled.a`
 
   @media (max-width: 1024px) {
     justify-content: center; /* Centraliza o link */
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 670px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 540px) {
+    font-size: 1.0rem;
+  }
+  @media (max-width: 493px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 471px) {
+    font-size: 0.7rem;
   }
 `;

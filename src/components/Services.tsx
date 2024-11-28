@@ -28,8 +28,9 @@ export const Services = () => {
         >
           <ServiceWarapper>
             <ServiceIcon src={IconSettings} alt="Não invisto em Marketing" />
-            <ServiceText>
               <h3>Não invisto em Marketing</h3>
+          </ServiceWarapper>
+            <ServiceText>
               <p>
                 Você sabe que seu negócio tem potencial, mas sente que não consegue alcançar mais clientes ou crescer como poderia?
               </p>
@@ -37,7 +38,6 @@ export const Services = () => {
                 Eu posso te ajudar <img src={IconArrow} alt="Seta para a direita" />
               </ServiceLink>
             </ServiceText>
-          </ServiceWarapper>
         </ServiceBox>
 
         <ServiceBox  onClick={() =>
@@ -51,8 +51,9 @@ export const Services = () => {
         >
           <ServiceWarapper>
             <ServiceIcon src={IconSettings} alt="Já invisto em Marketing" />
-            <ServiceText>
               <h3>Já invisto em Marketing</h3>
+          </ServiceWarapper>
+            <ServiceText>
               <p>
                 Você já tentou várias estratégias, investiu seu tempo e dinheiro, mas os resultados parecem não acompanhar seus esforços?
               </p>
@@ -60,7 +61,6 @@ export const Services = () => {
                 Eu posso te ajudar <img src={IconArrow} alt="Seta para a direita" />
               </ServiceLink>
             </ServiceText>
-          </ServiceWarapper>
         </ServiceBox>
       </div>
     </ServicesSection>
